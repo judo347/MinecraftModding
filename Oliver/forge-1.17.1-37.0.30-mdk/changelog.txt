@@ -1,3 +1,68 @@
+Build: 1.17.1-37.0.30 - Tue Aug 10 20:11:07 GMT 2021
+	lexmanos:
+		Fixed reference to registryAccess in dimension fix, and marked for removal in next MC version. Closes #7961
+
+=========
+Build: 1.17.1-37.0.29 - Tue Aug 10 07:11:36 GMT 2021
+	lexmanos:
+		Bump BootStrapLauncher, and make sure Capability providers call parent revive.
+
+=========
+Build: 1.17.1-37.0.28 - Mon Aug 09 19:09:40 GMT 2021
+	sirttas:
+		Fix custom ingredients not being read correctly over the network. (#7980)
+
+=========
+Build: 1.17.1-37.0.27 - Fri Aug 06 17:18:27 GMT 2021
+	djbake101:
+		Add a OnDatapackSyncEvent, useful as a notification for modders to send extra data to the client (#7912)
+
+=========
+Build: 1.17.1-37.0.26 - Fri Aug 06 16:42:42 GMT 2021
+	choonster:
+		Add access transformer to make Features.Decorators class public (#7974)
+
+=========
+Build: 1.17.1-37.0.25 - Wed Aug 04 08:44:11 GMT 2021
+	lexmanos:
+		Fix NullPointerException in DetercorRailBlock patch.
+
+=========
+Build: 1.17.1-37.0.24 - Wed Aug 04 08:08:36 GMT 2021
+	lexmanos:
+		Add forceSystemNanoTime config option to the client.
+		Normally glfwGetTime is used, but in some cases it may have performance issues.
+
+	lexmanos:
+		Remove entity.remove(keepData) functions because Mojang changed entity removal mechanics.
+		If a modder wishes to use the capabilities from a invalid entity. They must manually call reviveCaps/invalidateCaps themselves.
+
+=========
+Build: 1.17.1-37.0.22 - Mon Aug 02 22:47:24 GMT 2021
+	hycrafthd:
+		Rename potion registry fields to match the mojang names (#7939)
+
+=========
+Build: 1.17.1-37.0.21 - Mon Aug 02 21:58:21 GMT 2021
+	bl4ckscor33:
+		Fix patch issue that removed SimpleWaterloggedBlock from BaseRailBlock (#7937)
+
+=========
+Build: 1.17.1-37.0.20 - Mon Aug 02 21:34:56 GMT 2021
+	strikerrocker:
+		Fix EntityInteractSpecific Event not being fired in server (#7936)
+
+=========
+Build: 1.17.1-37.0.19 - Sun Aug 01 23:00:34 GMT 2021
+	championash5357:
+		Add BlockEntityRenderer registering to RegisterRenderers (#7975)
+
+=========
+Build: 1.17.1-37.0.18 - Sun Aug 01 05:02:57 GMT 2021
+	daemonumbra:
+		Fix installer issue with spaces in paths. (#7972)
+
+=========
 Build: 1.17.1-37.0.17 - Sat Jul 31 00:54:01 GMT 2021
 	35673674+alcatrazescapee:
 		Remove unused config entries. (#7954)
